@@ -1,0 +1,58 @@
+** guardcheck
+
+guardcheck is a shell script that verifies header guard correctness in C++ header files (.h, .hh, .hpp).
+
+*** Usage
+
+#+BEGIN_SRC shell
+Usage: guardcheck [-r] [-v] [-h] [-d path] file
+	-d: source root directory (optional)
+	-r: recursively check files (optional)
+	-v: enable verbose mode (optional)
+	-h: display this help message
+#+END_SRC
+
+*** Installation
+
+1. Clone the repository:
+
+#+BEGIN_SRC shell
+git clone https://github.com/niklasva/guardcheck.git
+#+END_SRC
+
+2. Navigate to the directory:
+
+#+BEGIN_SRC shell
+cd guardcheck
+#+END_SRC
+
+3. Make the script executable:
+
+#+BEGIN_SRC shell
+chmod +x guardcheck.sh
+#+END_SRC
+
+*** Example
+
+To check a single file:
+
+#+BEGIN_SRC shell
+./guardcheck.sh my_header.hpp
+#+END_SRC
+
+To recursively check all header files in a directory:
+
+#+BEGIN_SRC shell
+./guardcheck.sh -r -v /path/to/directory
+#+END_SRC
+
+To check a file relative to a specific root folder:
+
+#+BEGIN_SRC shell
+./guardcheck.sh -d ./src/root my_header.hpp
+#+END_SRC
+
+*** License
+
+This project is licensed under the [[https://www.gnu.org/licenses/gpl-3.0.html][GNU General Public License v3.0]].
+
