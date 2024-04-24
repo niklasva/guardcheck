@@ -6,9 +6,9 @@ guardcheck is a shell script that verifies header guard correctness in C++ heade
 
 #+BEGIN_SRC shell
 Usage: guardcheck [-r] [-v] [-h] [-d path] file
-	-d: source root directory (optional)
-	-r: recursively check files (optional)
-	-v: enable verbose mode (optional)
+	-d: source root directory
+	-r: recursively check files
+	-v: enable verbose mode
 	-h: display this help message
 #+END_SRC
 
